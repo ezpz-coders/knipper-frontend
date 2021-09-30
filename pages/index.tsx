@@ -5,7 +5,7 @@ import Footer from '@components/Footer'
 const Home = () => {
   return (
     <div>
-      <h1>welcome oof</h1>
+      <h1>Railway testing</h1>
       <Footer />
     </div>
   )
