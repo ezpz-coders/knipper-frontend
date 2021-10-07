@@ -1,6 +1,2 @@
-*/**.js
-*/**.d.ts
-dist
 node_modules
-.next
-package.json
+out
