@@ -1,13 +1,19 @@
-import { AppBar,Box,Toolbar,IconButton,Typography,Container } from "@mui/material"
-import { Menu } from "@mui/icons-material";
+import {
+  AppBar,
+  Box,
+  Toolbar,
+  IconButton,
+  Typography,
+  Container,
+} from '@mui/material';
+import { Menu } from '@mui/icons-material';
 
-const NavBar = () =>{
-    return (
-        <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="fixed">
-            <Container>
+const NavBar = () => {
+  return (
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="fixed">
+        <Container>
           <Toolbar>
-            
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               Knipper
             </Typography>
@@ -18,12 +24,12 @@ const NavBar = () =>{
               aria-label="menu"
               sx={{ mr: 2 }}
             >
-              <Menu/>
+              <Menu />
             </IconButton>
           </Toolbar>
-          </Container>
-        </AppBar>
-      </Box>
-    )
-}
-export default NavBar
+        </Container>
+      </AppBar>
+    </Box>
+  );
+};
+export default NavBar;
