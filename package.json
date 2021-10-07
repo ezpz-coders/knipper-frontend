@@ -1,5 +1,5 @@
 {
-  "name": "Knipper Frontend",
+  "name": "knipper-frontend",
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
