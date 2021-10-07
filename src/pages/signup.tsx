@@ -68,7 +68,7 @@ const SignUp = () => {
         direction="column"
         alignItems="center"
         justifyContent="center"
-        style={{ minHeight: '95vh', position: 'relative' }}
+        sx={{ minHeight: '95vh', position: 'relative' }}
       >
         <Box
           ref={el}
@@ -82,22 +82,21 @@ const SignUp = () => {
           }}
         ></Box>
         <Container maxWidth="sm" style={{ zIndex: 1 }}>
-          <Paper elevation={3} style={{ padding: '1rem' }}>
-            <Stack style={{ lineHeight: '1.5rem' }} spacing={2}>
+          <Paper elevation={3} sx={{ padding: '1rem' }}>
+            <Stack spacing={2}>
               <TextField
-                id="outlined-basic"
                 label="Email"
                 variant="outlined"
                 onChange={(e) => handleInputChange('email')(e)}
               />
+
               <TextField
-                id="outlined-basic"
                 label="Username"
                 variant="outlined"
                 onChange={(e) => handleInputChange('user_name')(e)}
               />
+
               <TextField
-                id="outlined-basic"
                 label="Password"
                 type={formValues.showPassword ? 'text' : 'password'}
                 variant="outlined"
@@ -120,8 +119,8 @@ const SignUp = () => {
                   ),
                 }}
               />
+
               <TextField
-                id="outlined-basic"
                 label="Confirm Password"
                 type={formValues.showConfirmPassword ? 'text' : 'password'}
                 variant="outlined"
@@ -144,6 +143,7 @@ const SignUp = () => {
                   ),
                 }}
               />
+
               <Button
                 variant="contained"
                 onClick={() => {

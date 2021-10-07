@@ -5,7 +5,7 @@ import { inputForm } from '../../pages/signup';
 export const signUpUser = createAsyncThunk(
   'signup/User',
   async (_: inputForm) => {
-    const res = await fetch(`http://localhost:8000/api/v1/users/signup`, {
+    const res = await fetch(`${BASE_URL}/api/v1/users/signup`, {
       method: 'POST',
       headers: {
         Accept: 'application/json',
@@ -17,9 +17,11 @@ export const signUpUser = createAsyncThunk(
     return data;
   }
 );
-export interface userDetails {}
+export interface userDetails {
+  auth_token:string
+}
 export interface loginStruct {
-  details?: userDetails;
+  details?: any,
   isLoggedIn: boolean;
 }
 export interface actionMethods {
@@ -40,5 +42,5 @@ const signUpSlice = createSlice({
     });
   },
 });
-export const {} = signUpSlice.actions;
+
 export default signUpSlice.reducer;
